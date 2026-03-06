@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nikart-Dent</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+ <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#home" class="logo">
+    <div class="logo-icon"><img class="logo-icon" src="img/nikart_dent (1).png" alt=""></div>
+    <span class="logo-text">Nikart-Dent</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#home">Главная</a></li>
+    <li><a href="#services">Наши услуги</a></li>
+    <li><a href="#contacts">Контакты</a></li>
+  </ul>
+  <button class="burger" id="burger" aria-label="Меню">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" onclick="closeMobile()" >Главная</a>
+  <a href="#services" onclick="closeMobile()">Наши услуги</a>
+  <a href="#contacts" onclick="closeMobile()">Контакты</a>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-photo-layer"></div>
+
+  <!-- Decorative tooth SVG -->
+  <svg class="hero-tooth" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M100 10C60 10 20 40 20 90c0 30 10 55 20 80 8 20 18 50 25 50 8 0 12-20 15-45 2-16 10-25 20-25s18 9 20 25c3 25 7 45 15 45 7 0 17-30 25-50 10-25 20-50 20-80 0-50-40-80-80-80z" fill="white"/>
+  </svg>
+
+  <div class="hero-content">
+    <div class="hero-badge">✦ Ваша улыбка — наша забота</div>
+    <h1>Nikart-Dent<br/>Стоматология</h1>
+    <p>Современная стоматологическая клиника с опытными специалистами.<br/>Лечение зубов без боли и страха для всей семьи.</p>
+    <a href="#contacts" class="hero-btn">Записаться на приём</a>
+  </div>
+
+  <div class="scroll-down">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 5v14M5 12l7 7 7-7"/>
+    </svg>
+    Листайте
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="reveal">
+    <span class="section-tag">О нас</span>
+    <h2 class="section-title">Клиника, которой<br/>вы доверяете</h2>
+    <p class="section-sub">Мы работаем для того, чтобы каждый пациент чувствовал себя комфортно и уходил с красивой улыбкой.</p>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>Стоматологическая клиника <strong>Nikart-Dent </strong> была основана в 2018 году. За это время мы помогли тысячам пациентов обрести здоровые и красивые зубы. Наша команда состоит из высококвалифицированных специалистов, которые постоянно повышают свою квалификацию.</p>
+      <p>Мы используем только современное оборудование и проверенные материалы от ведущих мировых производителей. Ваша безопасность и комфорт — наш главный приоритет.</p>
+      <p>В клинике созданы все условия для комфортного лечения: уютный интерьер, приветливый персонал и внимательный подход к каждому пациенту.</p>
+      <p>Руководитель и врач высшей категории Гырбу Николай Павлович</p>
+      <div class="about-stats">
+        <div class="stat"><span class="stat-num">10+</span><span class="stat-label">лет опыта</span></div>
+      </div>
+    </div>
+
+    <div class="about-photos reveal">
+      <div class="about-photo">
+        <div class="photo-placeholder ph-1">🏥</div>
+      </div>
+            <div class="about-photo">
+        <div class="photo-placeholde ph-2"><img  class="photo-placeholder ph-2" src="img/Nikolai.jpg" alt=""></div>
+      </div>
+      <div class="about-photo">
+        <div class="photo-placeholder ph-1">🏥</div>
+      </div>
+
+      <div class="about-photo">
+        <div class="photo-placeholder ph-3">🔬</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="reveal">
+    <span class="section-tag">Наши услуги</span>
+    <h2 class="section-title">Полный спектр<br/>стоматологических услуг</h2>
+    <p class="section-sub">Мы предоставляем весь комплекс стоматологической помощи в одном месте.</p>
+  </div>
+
+  <div class="services-grid">
+    
+
+
+    <div class="service-card reveal">
+      <div class="service-icon">🦷</div>
+      <h3>Стоматологическая терапия</h3>
+      <p>Лечение кариеса, пульпита и других заболеваний зубов. Профессиональная чистка и профилактика.</p>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon">👨‍⚕️</div>
+      <h3>хирургия </h3>
+      <p>хирургические операции в полости рта: удаляет зубы, лечит воспаления, кисты и другие заболевания челюсти и десен.</p>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon">🦴</div>
+      <h3>Имплантация</h3>
+      <p>Установка зубных имплантов современными методами. Долговечный результат и естественный вид.</p>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon">🔧</div>
+      <h3>Протезирование</h3>
+      <p>Протезирование зубов коронками, мостами и съёмными протезами. Восстановим жевательную функцию.</p>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon">📐</div>
+      <h3>Ортодонтия</h3>
+      <p>Исправление прикуса брекет-системами и элайнерами. Работаем со взрослыми и детьми.</p>
+    </div>
+
+     
+      <div class="service-card reveal">
+      <div class="service-icon"><img class="ig" src="img/face-recognition_8489214.png" alt=""></div>
+      <h3>Компьютерная томография</h3>
+      <p>Точная диагностика зубов, корней и челюстей с помощью 3D-снимка. Современное оборудование с минимальной дозой облучения.</p>
+    </div>
+
+    <div class="service-card reveal">
+      <div class="service-icon">👶</div>
+      <h3>Детская стоматология</h3>
+      <p>Бережное и безболезненное лечение молочных и постоянных зубов у детей в игровой атмосфере.</p>
+    </div>
+
+
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<div class="slider-section">
+  <div class="slider-header reveal">
+    <span class="section-tag">Документы</span>
+    <h2 class="section-title">Наши сертификаты<br/>и лицензии</h2>
+    <p class="section-sub">Подтверждение высокого уровня квалификации наших специалистов.</p>
+  </div>
+
+  <div class="slider-wrapper">
+    <div class="slider-track" id="sliderTrack">
+
+    <div class="cert-card">
+              <img src="img/1.png" alt="">
+      </div>
+      
+
+      <div class="cert-card">
+      <img  src="img/2.png" alt="">
+      </div>
+
+      <div class="cert-card">
+      <img    src="img/3.png" alt="">
+      </div>
+      
+  
+      <div class="cert-card">
+      <img   src="img/4.png" alt="">
+      </div>
+
+      <div class="cert-card">
+      <img  src="img/5.png" alt="">
+      </div>
+
+      <div class="cert-card">
+      <img  src="img/6.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="slider-controls">
+    <button class="slider-btn" id="prevBtn">&#8592;</button>
+    <div class="slider-dots" id="dots"></div>
+    <button class="slider-btn" id="nextBtn">&#8594;</button>
+  </div>
+</div>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="reveal">
+    <span class="section-tag">Контакты</span>
+    <h2 class="section-title">Свяжитесь с нами</h2>
+    <p class="section-sub">Запишитесь на приём или задайте любой вопрос — мы всегда рады помочь.</p>
+  </div>
+
+  <div class="contacts-grid">
+    <div class="contact-info reveal">
+      <div class="contact-item">
+        <div class="contact-icon"><img src="img/LOCATE.png" alt=""></div>
+        <div>
+          <h4>Адрес</h4>
+          <p>Комрат, ул. Победы 69/1</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><img src="img/phone.png" alt=""></div>
+        <div>
+          <h4>Телефон</h4>
+          <a href="tel:069539335">0 (69) 539 35</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><img src="img/clock.png" alt=""></div>
+        <div>
+          <h4>График работы</h4>
+          <p>Пн–Пт: 9:00 – 20:00<br/>Сб: 10:00 – 17:00<br/>Вс: выходной</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><img src="img/gmail.png" alt=""></div>
+        <div>
+          <h4>Email</h4>
+          <a href="mailto:info@dentacare.ru">NikArt-Dent</a>
+        </div>
+      </div>
+    </div>
+
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="#home" class="footer-logo">
+      <div class="logo-icon"><img class="logo-icon" src="img/nikart_dent (1).png" alt=""></div>
+      <span class="logo-text">Nikart-Dent</span>
+    </a>
+
+    <div class="footer-social">
+      <a href="https://www.instagram.com/nikart_dent?igsh=MTA5NTMwcmVudGdieQ==" class="social-btn" title="Instagram" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+     
+      <a href="tel:069539335" class="social-btn" title="Позвонить" aria-label="Позвонить">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3-8.63A2 2 0 012.18 2H5a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+        </svg>
+      </a>
+    </div>
+
+    <a href="tel:069539335" class="footer-phone">
+      <img src="img/phone.png" alt=""> 0 (69) 539 35
+    </a>
+  </div>
+
+  <div class="footer-copy">
+    © 2018 NikArt-Dent— Стоматологическая клиника. Все права защищены. <br> SRL “NikArt-Dent”
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
