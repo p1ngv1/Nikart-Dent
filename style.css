@@ -331,8 +331,8 @@ section { padding: 96px 5%; }
 }
 
 .cert-card img {
-  width: 70%;
-  height: 71%;
+  width: 90%;
+  height: 91%;
   object-fit: cover;
   object-position: center;
   display: block;
@@ -456,4 +456,5 @@ section { padding: 96px 5%; }
       .slider-section { padding: 64px 5%; }
       .footer-inner { flex-direction: column; align-items: flex-start; }
       .contact-form { padding: 24px 18px; }
+
     }
